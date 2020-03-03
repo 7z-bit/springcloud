@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: springcloud-api-gateway
+
+zuul:
+  routes:
+    api:
+      path: /api/**
+      serviceId: springcloud-service-feign
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka.com:8761/eureka/
