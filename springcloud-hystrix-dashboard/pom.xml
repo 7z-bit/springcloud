@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zego</groupId>
-    <artifactId>springcloud-service-feign</artifactId>
+    <artifactId>springcloud-hystrix-dashboard</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-service-feign</name>
+    <name>springcloud-hystrix-dashboard</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -27,20 +27,9 @@
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-feign</artifactId>
+            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
             <version>1.4.5.RELEASE</version>
         </dependency>
-
-        <!--服务健康检查-->
-        <!--<dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
